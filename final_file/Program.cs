@@ -2,7 +2,7 @@
 // длина которых меньше либо равна 3.
 
 string [] array = {"smart" , "123" , "-2" , "clever"};
-string [] secondArray = {};
+string [] secondArray = new string [array.Length];
 int count = 0 ;
 
 void ArrayMagic(string[] array, string[] secondArray)
@@ -13,7 +13,6 @@ void ArrayMagic(string[] array, string[] secondArray)
         {
             secondArray[count] = array[i];
             
-            Console.Write (secondArray[count]);
             count++;
         }
     }
